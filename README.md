@@ -1,2 +1,0 @@
-# TinyUrl
-Tiny Url Replica
