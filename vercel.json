@@ -2,12 +2,9 @@
     "version": 2,
     "builds": [
       {
-        "src": ".",
-        "use": "@vercel/static-build",
-        "config": {}
+        "src": "./*",
+        "use": "@vercel/static-build"
       }
     ],
-    "build": {
-      "command": "npm install && npm run build"
-    }
+    "buildCommand": "npm run build"
   }
