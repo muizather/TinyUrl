@@ -4,13 +4,17 @@
   "description": "Tiny Url Replica",
   "main": "index.js",
   "scripts": {
-    "build": "npm start",
-    "vercel-build": "npm run build"
+    "build": "node server.js",
+    "vercel-build": "npm run build",
+    "start": "node server.js"
   },
   "author": "MUIZ ATHER",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "shortid": "^2.2.16"
   }
 }
