@@ -4,7 +4,8 @@
   "description": "Tiny Url Replica",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "npm install"
+    "build": "next build --outdir dist",
+    "vercel-build": "npm run build"
   },
   "author": "MUIZ ATHER",
   "license": "ISC",
