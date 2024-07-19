@@ -8,9 +8,6 @@
       }
     ],
     "build": {
-      "command": "npm run build"
-    },
-    "start": {
-      "command": "npm run start"
+      "command": "npm install && npm run build"
     }
   }
