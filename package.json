@@ -4,7 +4,7 @@
   "description": "Tiny Url Replica",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
+    "build": "react-scripts build",
     "vercel-build": "npm run build"
   },
   "author": "MUIZ ATHER",
