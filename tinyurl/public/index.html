@@ -1,0 +1,38 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+</head>
+<body>
+  <h1>URL Shortener</h1>
+  <form id="url-form">
+    <label for="url">Enter URL to shorten:</label>
+    <input type="url" id="url" name="url">
+    <button type="submit">Shorten URL</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById('url-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const urlInput = document.getElementById('url');
+      const url = urlInput.value;
+      fetch('/api/shorten', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+      })
+      .then(response => response.json())
+      .then((data) => {
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerText = `Short URL: ${data.shortUrl}`;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>
