@@ -4,7 +4,7 @@ const shortid = require('shortid');
 const urlDatabase = {};
 
 app.use(express.json());
-app.use(express.static('tinyurl/public')); // serve static HTML file
+app.use(express.static('tinyurl/public'));
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/tinyurl/public/index.html');
