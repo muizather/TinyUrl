@@ -4,7 +4,7 @@
   "description": "Tiny Url Replica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vercel-build": "npm run build"
   },
   "author": "MUIZ ATHER",
   "license": "ISC",
